@@ -117,51 +117,53 @@ return [
         [
             'text'        => 'Alertas',
             'url'         => 'admin/alertas',
-            'icon'        => 'file',
+            'icon'        => 'bell-o',
             'label'       => 4,
             'label_color' => 'success',
         ],
         [
             'text'        => 'Graficos',
             'url'         => 'admin/graficos',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        'REPORTES',
-        [
-            'text' => 'Reportes',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'Diario',
-            'url'         => 'admin/diario',
-            'icon'        => 'file',
-            'label'       => 4,
+            'icon'        => 'bar-chart',
             'label_color' => 'success',
         ],
         [
-            'text'        => 'Semanal',
-            'url'         => 'admin/semanal',
+            'text'        => 'Reportes',
+            'url'         => 'admin/reportes',
             'icon'        => 'file',
-            'label'       => 4,
             'label_color' => 'success',
+            'submenu' => [
+                [
+                    'text'        => 'Diario',
+                    'url'         => 'admin/semanal',
+                    'icon'        => 'file-text',
+                    'label'       => 4,
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Semanal',
+                    'url'         => 'admin/semanal',
+                    'icon'        => 'file-text',
+                    'label'       => 4,
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Mensual',
+                    'url'         => 'admin/mensual',
+                    'icon'        => 'file-text',
+                    'label'       => 4,
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Anual',
+                    'url'         => 'admin/anual',
+                    'icon'        => 'file-text',
+                    'label'       => 4,
+                    'label_color' => 'success',
+                ],
+            ],
         ],
-        [
-            'text'        => 'Mensual',
-            'url'         => 'admin/mensual',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        [
-            'text'        => 'Anual',
-            'url'         => 'admin/anual',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
+        
         'ESTADÍSTICAS',
         [
             'text' => 'Estadisticas',
@@ -171,63 +173,31 @@ return [
         [
             'text'        => 'Estadisticas Generales',
             'url'         => 'admin/generales',
-            'icon'        => 'file',
-            'label'       => 4,
+            'icon'        => 'pie-chart',
             'label_color' => 'success',
         ],
-        'PERFIL',
+        'PERFÍL',
         [
-            'text' => 'Períl',
+            'text' => 'Perfíl',
             'url'  => 'admin/estadisticas',
             'can'  => 'manage-blog',
         ],
         [
             'text' => 'Editar Perfíl',
             'url'  => 'admin/perfil/editar',
-            'icon' => 'user',
+            'icon' => 'cog',
         ],
-        // [
-        //     'text'    => 'Multilevel',
-        //     'icon'    => 'share',
-        //     'submenu' => [
-        //         [
-        //             'text' => 'Level One',
-        //             'url'  => '#',
-        //         ],
-        //         [
-        //             'text'    => 'Level One',
-        //             'url'     => '#',
-        //             'submenu' => [
-        //                 [
-        //                     'text' => 'Level Two',
-        //                     'url'  => '#',
-        //                 ],
-        //                 [
-        //                     'text'    => 'Level Two',
-        //                     'url'     => '#',
-        //                     'submenu' => [
-        //                         [
-        //                             'text' => 'Level Three',
-        //                             'url'  => '#',
-        //                         ],
-        //                         [
-        //                             'text' => 'Level Three',
-        //                             'url'  => '#',
-        //                         ],
-        //                     ],
-        //                 ],
-        //             ],
-        //         ],
-        //         [
-        //             'text' => 'Level One',
-        //             'url'  => '#',
-        //         ],
-        //     ],
-        // ],
         'SUPER USUARIO',
         [
+            'text' => 'supersu',
+            'url'  => 'admin/supersu',
+            'can'  => 'manage-blog',
+        ],
+        [
             'text'       => 'Entrar',
+            'url'  => 'admin/supersu',
             'icon_color' => 'red',
+            'icon' => 'slack',
         ],
     ],
 
