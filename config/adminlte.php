@@ -129,10 +129,15 @@ return [
         ],
         [
             'text'        => 'Reportes',
-            'url'         => 'admin/reportes',
             'icon'        => 'file',
             'label_color' => 'success',
             'submenu' => [
+                [
+                    'text'        => 'Actualizar',
+                    'url'         => 'admin/actualizar',
+                    'icon'        => 'repeat',
+                    'label_color' => 'success',
+                ],
                 [
                     'text'        => 'Diario',
                     'url'         => 'admin/semanal',
@@ -163,7 +168,50 @@ return [
                 ],
             ],
         ],
-        
+        [
+            'text'        => 'Datos',
+            'icon'        => 'file',
+            'label_color' => 'success',
+            'submenu' => [
+                [
+                    'text'        => 'Ordenes de trabajo',
+                    'url'         => 'admin/OT',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Requisiciones',
+                    'url'         => 'admin/RQ',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Ordenes de Compra',
+                    'url'         => 'admin/OC',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Ordenes de Servicio',
+                    'url'         => 'admin/OS',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Entradas',
+                    'url'         => 'admin/RE',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+                [
+                    'text'        => 'Remisiones',
+                    'url'         => 'admin/RV',
+                    'icon'        => 'file-text',
+                    'label_color' => 'success',
+                ],
+            ],
+        ],
+
         'ESTADÍSTICAS',
         [
             'text' => 'Estadisticas',
@@ -188,6 +236,11 @@ return [
             'icon' => 'cog',
         ],
         'SUPER USUARIO',
+        [
+            'text' => 'Ver Registros',
+            'url'  => 'admin/ver',
+            'icon' => 'list',
+        ],
         [
             'text' => 'supersu',
             'url'  => 'admin/supersu',

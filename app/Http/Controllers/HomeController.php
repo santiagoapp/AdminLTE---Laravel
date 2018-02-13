@@ -25,8 +25,10 @@ class HomeController extends Controller
     public function index()
     {
         $bears = Bear::all();
-        // return view('home', $bears);
-        return view('home')->with(['bears'=>$bears]);;
+        
+        return view('home')->with([
+            'bears'=>$bears
+        ]);
 
         
     }
