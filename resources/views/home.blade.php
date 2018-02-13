@@ -18,50 +18,34 @@
 				<table id="example2" class="table table-bordered table-hover">
 					<thead>
 						<tr>
-							<th>Rendering engine</th>
-							<th>Browser</th>
-							<th>Platform(s)</th>
-							<th>Engine version</th>
-							<th>CSS grade</th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Type</th>
+							<th>Danger Level</th>
+							<th>Created At</th>
+							<th>Updated At</th>
 						</tr>
 					</thead>
 					<tbody>
+						@foreach ($bears as $bear)
 						<tr>
-							<td>Misc</td>
-							<td>Lynx</td>
-							<td>Text only</td>
-							<td>-</td>
-							<td>X</td>
+							<td>{{ $bear->id }}</td>
+							<td>{{ $bear->name }}</td>
+							<td>{{ $bear->type }}</td>
+							<td>{{ $bear->danger_level }}</td>
+							<td>{{ $bear->created_at }}</td>
+							<td>{{ $bear->updated_at }}</td>
 						</tr>
-						<tr>
-							<td>Misc</td>
-							<td>IE Mobile</td>
-							<td>Windows Mobile 6</td>
-							<td>-</td>
-							<td>C</td>
-						</tr>
-						<tr>
-							<td>Misc</td>
-							<td>PSP browser</td>
-							<td>PSP</td>
-							<td>-</td>
-							<td>C</td>
-						</tr>
-						<tr>
-							<td>Other browsers</td>
-							<td>All others</td>
-							<td>-</td>
-							<td>-</td>
-							<td>U</td>
-						</tr>
+						@endforeach
 					</tbody>
 					<tfoot>
 						<tr>
-							<th>Rendering engine</th>
-							<th>Browser</th>
-							<th>Platform(s)</th>
-							<th>Engine version</th>
-							<th>CSS grade</th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Type</th>
+							<th>Danger Level</th>
+							<th>Created At</th>
+							<th>Updated At</th>
 						</tr>
 					</tfoot>
 				</table>

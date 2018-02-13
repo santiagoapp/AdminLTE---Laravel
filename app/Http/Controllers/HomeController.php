@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Bear;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $bears = Bear::all();
+        // return view('home', $bears);
+        return view('home')->with(['bears'=>$bears]);;
+
+        
     }
 }
