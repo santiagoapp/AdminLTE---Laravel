@@ -1,1 +1,1 @@
-Just another try
+This is a Supply chain system manager for a particular case in this repository you can find the organization structure for and manufacturing company.
